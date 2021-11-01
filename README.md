@@ -4,6 +4,7 @@ This work is proposed to investigate the possible association between programmin
 
 # Motivation/Need
 Two studies have investigated the impact of programming language design on code quality. The results reported in the first work were based on an observational study with a corpus of 729 GitHub projects written in 17 programming languages. They found that languages significantly impact code quality [1]. The study was replicated in 2019 [2], they first reproduced the findings with the same 729 projects following the same methodology and analysis resulted in a partially successful replication. After that, they re-analysed the included projects following different methodology for processing and analysis than the original one. As a result, a smaller number of projects were included (423 projects) and most of the claims did not hold. In addition, for the cases where the claims did hold, the relationship between programming language and defects were found to be exceedingly small in effect size.
+
 The two datasets that have been used in the previous works are very small to obtain conclusive findings. Thus, in this work I’m going to revisit their findings and investigate the association between language and code quality in terms of number and type of bugs, along with other projects attributes in a larger-scale setting by taking advantage of data science tools and techniques.
 
 
@@ -13,7 +14,7 @@ The two datasets that have been used in the previous works are very small to obt
 * 	Would findings hold If we controlled for differences in project size and type?
 Project attributes: code quality in terms of number and type of bugs, number of languages, number of commits, number of contributors,  project size, duration, project type.
 2. 	What are the types of the included projects? (analyzing projects description to get their type, NLP)
-3.	What are the bugs types? (analyzing bugs description to get their type, NLP)
+3. 	What are the bugs types? (analyzing bugs description to get their type, NLP)
 
 
 # Preliminary Design
@@ -26,7 +27,7 @@ For each classification investigate the following:
 4.	Identify bugs type.
 *	Method: topic modeling using the Latent Dirichlet Allocation (LDA).
 Project attributes: code quality in terms of number and type of bugs, number of languages, number of commits, number of contributors,  project size, project duration, project type.
-5. Validate the findings. Still not sure. 
+5. Validate the findings. Still not sure :/. 
 
 
 # Data Description
